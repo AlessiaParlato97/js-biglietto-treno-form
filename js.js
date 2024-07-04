@@ -30,6 +30,9 @@ formElement.addEventListener('submit', function (event) {
 
     console.log('submit', event);
 
+    const selectSconto = selectScontoElement.value;
+    console.log(selectSconto);
+
     const euro = 0.21;
     let calcoloPrezzoTotale = km * euro;
 

@@ -20,13 +20,25 @@
             <div class="container">
                 <form id="form-prezzo" class=" row g-3">
                     <div class="col-md-6">
-                        <label for="inpuKm" class="form-label">Km da percorrere</label>
+                        <label for="inputKm" class="form-label">Km da percorrere</label>
                         <input type="text" class="form-control" id="inputKm" />
                     </div>
                     <div class="col-md-6">
-                        <label for="inpuEta" class="form-label">Età</label>
+                        <label for="inputEta" class="form-label">Età</label>
                         <input type="text" class="form-control" id="inputEta" />
                     </div>
+
+                    <div class="col-12">
+                        <label for="sconto" class="form-label">Sconto</label>
+                        <select type="text" class="form-control" id="sconto" name="sconto" id="form-select"
+                            aria-label="Default select example">
+
+                            <option selected value="">-- seleziona --</option>
+                            <option value="1">Sconto under 18</option>
+                            <option value="2">Sconto over 65</option>
+                        </select>
+                    </div>
+
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Calcola prezzo</button>
                     </div>

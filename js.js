@@ -9,9 +9,10 @@ console.log(formElement);
 
 const inputKmElement = document.getElementById('km');
 const inputEtaElement = document.getElementById('eta');
+const selectScontoElement = document.getElementById('sconto');
 const calcoloOutputElement = document.getElementById('calcolo');
 
-console.log(inputKmElement, inputEtaElement, calcoloOutputElement);
+console.log(inputKmElement, inputEtaElement, calcoloOutputElement, selectScontoElement);
 
 
 
@@ -29,8 +30,8 @@ formElement.addEventListener('submit', function (event) {
 
     console.log('submit', event);
 
-
-    let calcoloPrezzoTotale = km * 0.21;
+    const euro = 0.21;
+    let calcoloPrezzoTotale = km * euro;
 
     console.log(calcoloPrezzoTotale);
     calcoloOutputElement.innerHTML = calcoloPrezzoTotale + ' euro';

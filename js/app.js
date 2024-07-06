@@ -32,6 +32,7 @@ formElement.addEventListener('submit', function (event) {
 
     const euro = 0.21;
     const prezzoPerKm = km * euro;
+    let risultato = 0;
 
     if (selectSconto === '1') {
         let calcoloSconto18 = (prezzoPerKm * 20) / 100;
@@ -50,7 +51,7 @@ formElement.addEventListener('submit', function (event) {
 
     }
 
-
+    let calcoloPrezzoTotale = risultato;
     console.log(calcoloPrezzoTotale);
     calcoloOutputElement.innerHTML = calcoloPrezzoTotale + ' euro';
 

@@ -7,12 +7,11 @@ console.log(formElement);
 
 
 
-const inputKmElement = document.getElementById('km');
-const inputEtaElement = document.getElementById('eta');
+const inputKmElement = document.getElementById('inputKm');
 const selectScontoElement = document.getElementById('sconto');
 const calcoloOutputElement = document.getElementById('calcolo');
 
-console.log(inputKmElement, inputEtaElement, calcoloOutputElement, selectScontoElement);
+console.log(inputKmElement, calcoloOutputElement, selectScontoElement);
 
 
 
@@ -25,8 +24,6 @@ formElement.addEventListener('submit', function (event) {
     const km = parseFloat(inputKmElement.value);
     console.log(km);
 
-    const eta = parseFloat(inputEtaElement.value);
-    console.log(eta);
 
     console.log('submit', event);
 

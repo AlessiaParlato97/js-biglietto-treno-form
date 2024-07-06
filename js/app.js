@@ -18,8 +18,7 @@ console.log(inputKmElement, calcoloOutputElement, selectScontoElement);
 
 
 formElement.addEventListener('submit', function (event) {
-
-    event.preventDefault()
+    event.preventDefault();
 
     const km = parseFloat(inputKmElement.value);
     console.log(km);
@@ -55,4 +54,7 @@ formElement.addEventListener('submit', function (event) {
     console.log(calcoloPrezzoTotale);
     calcoloOutputElement.innerHTML = calcoloPrezzoTotale + ' euro';
 
+    inputKm.value = "";
+    sconto.value = "";
 })
+
